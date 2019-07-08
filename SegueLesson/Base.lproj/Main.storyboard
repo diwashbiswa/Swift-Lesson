@@ -16,35 +16,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="vwg-xi-fdW">
-                                <rect key="frame" x="111.33333333333333" y="299.33333333333331" width="191.66666666666669" height="137.33333333333331"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCREEN ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R15-ZC-Nf2">
-                                        <rect key="frame" x="0.0" y="0.0" width="191.66666666666666" height="38.333333333333336"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKu-Ve-LCE">
-                                        <rect key="frame" x="32.333333333333329" y="96.333333333333371" width="126.99999999999999" height="41"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="systemBrownColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <state key="normal" title="Next Screen">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCREEN ONE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R15-ZC-Nf2">
+                                <rect key="frame" x="120" y="163" width="192" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NtE-JT-K2K">
+                                <rect key="frame" x="31" y="231" width="353" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKu-Ve-LCE">
+                                <rect key="frame" x="133" y="312" width="149" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemBrownColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Change Name">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeNameButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R0v-Ve-N45"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92133218050003052" green="0.46290571340727477" blue="0.35884910646994983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="vwg-xi-fdW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g3t-Mx-Ggu"/>
-                            <constraint firstItem="vwg-xi-fdW" firstAttribute="centerX" secondItem="MOx-Sk-dC6" secondAttribute="centerX" id="zLe-kV-8FP"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="MOx-Sk-dC6"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Screen 1" id="UUG-lY-5ek"/>
                     <navigationItem key="navigationItem" id="Mck-L2-ias"/>
+                    <connections>
+                        <outlet property="changeNameButton" destination="sKu-Ve-LCE" id="sdV-su-Ovu"/>
+                        <outlet property="nameLabel" destination="R15-ZC-Nf2" id="y56-uG-aWs"/>
+                        <outlet property="nameTextField" destination="NtE-JT-K2K" id="htI-ct-oib"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
