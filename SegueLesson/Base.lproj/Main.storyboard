@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="3649" y="637"/>
         </scene>
-        <!--Screen 3-->
+        <!--View Controller-->
         <scene sceneID="HTR-mG-Qum">
             <objects>
                 <viewController id="ebK-OI-ucD" customClass="ViewController" customModule="SegueLesson" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,19 +105,57 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2w-Aq-1IB">
+                                <rect key="frame" x="142" y="405" width="103" height="60"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleShadowColor" cocoaTouchSystemColor="systemFillColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="6pn-Q3-Oes"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="UUN-sj-hTi" firstAttribute="centerY" secondItem="7as-Eu-KvC" secondAttribute="centerY" id="1YH-gt-Y4i"/>
+                            <constraint firstItem="8hJ-SO-IWI" firstAttribute="bottom" secondItem="a2w-Aq-1IB" secondAttribute="bottom" constant="222" id="CiE-Cb-L6h"/>
                             <constraint firstItem="UUN-sj-hTi" firstAttribute="centerX" secondItem="8hJ-SO-IWI" secondAttribute="centerX" id="GVf-yh-tKc"/>
+                            <constraint firstItem="a2w-Aq-1IB" firstAttribute="leading" secondItem="8hJ-SO-IWI" secondAttribute="leading" constant="142" id="WhT-xc-ca7"/>
+                            <constraint firstItem="8hJ-SO-IWI" firstAttribute="trailing" secondItem="a2w-Aq-1IB" secondAttribute="trailing" constant="169" id="ZCG-DZ-vpg"/>
+                            <constraint firstItem="a2w-Aq-1IB" firstAttribute="top" secondItem="UUN-sj-hTi" secondAttribute="bottom" constant="19" id="okg-VB-IQ8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8hJ-SO-IWI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Screen 3" id="whK-YU-FS4"/>
+                    <navigationItem key="navigationItem" id="rpO-Sf-0c6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b1q-qG-pDN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5149.275362318841" y="252.71739130434784"/>
+            <point key="canvasLocation" x="5592.753623188406" y="531.52173913043487"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="slR-RX-nQG">
+            <objects>
+                <viewController id="kC1-n0-GRN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GEA-Zd-cTm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Screen blah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2V-RZ-qru">
+                                <rect key="frame" x="159" y="182" width="164" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="systemBrownColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="systemYellowColor"/>
+                        <viewLayoutGuide key="safeArea" id="qW9-lg-H5A"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eAA-gX-ywo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6455.072463768116" y="543.75"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="QhQ-gm-hSg">
@@ -125,18 +163,42 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="PcW-GG-iLF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hhK-cO-zpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="BUg-Hf-qcz"/>
                         <segue destination="Vao-sa-Xwj" kind="relationship" relationship="viewControllers" id="Qnf-LG-6MY"/>
-                        <segue destination="ebK-OI-ucD" kind="relationship" relationship="viewControllers" id="iDX-ca-4Vy"/>
+                        <segue destination="b4I-Tj-VHf" kind="relationship" relationship="viewControllers" id="iDX-ca-4Vy"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OdE-RX-S2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2357.971014492754" y="216.03260869565219"/>
         </scene>
+        <!--Screen 3-->
+        <scene sceneID="LZI-df-sbn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b4I-Tj-VHf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Screen 3" id="whK-YU-FS4"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YA4-UC-5zx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ebK-OI-ucD" kind="relationship" relationship="rootViewController" id="lg4-rA-Ixy"/>
+                        <segue destination="kC1-n0-GRN" kind="show" id="Ck3-bx-ngj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUP-st-VsY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4759" y="532"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6pn-Q3-Oes"/>
+    </inferredMetricsTieBreakers>
 </document>
